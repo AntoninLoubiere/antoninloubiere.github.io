@@ -1,9 +1,34 @@
 body {
+	background-repeat: no-repeat;
+	background-size: cover;
 
+	width: 99%;
+	height: 100%;
 }
 
 div.welcomeText {
 	text-align: center;
 
+	color: #DAA520;
+
 	margin-top: 15%;
+}
+
+div.welcomeText p {
+	font-size: 18px;
+}
+
+div.chooseLang img{
+	border-radius: 25px;
+
+	width: 100px;
+	height: 75px;
+
+	border-width: 2px;
+	border-style: solid;
+	border-color: transparent;
+}
+
+div.chooseLang img:hover {
+	border-color: white;
 }
