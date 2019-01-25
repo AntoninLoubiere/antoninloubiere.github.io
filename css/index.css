@@ -18,7 +18,7 @@ div.welcomeText p {
 	font-size: 18px;
 }
 
-div.chooseLang img{
+div.chooseLang * {
 	border-radius: 25px;
 
 	width: 100px;
@@ -31,4 +31,8 @@ div.chooseLang img{
 
 div.chooseLang img:hover {
 	border-color: white;
+}
+
+div.chooseLang img.disable:hover {
+	border-color: transparent;
 }
