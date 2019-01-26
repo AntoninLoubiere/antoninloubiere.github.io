@@ -1,20 +1,30 @@
 body {
-	margin: 0px;
+	margin: 0;
 	font-family: sans-serif;
 }
 
-.container {
-
+#container {
+	margin-top: 0px; /* need margin to don't be hide by nav bar, so it's controlled by js */
 }
 
-nav.mainMenu ul {
+nav#mainMenu {
+	overflow: auto;
+	top: 0;
+	position: fixed;
+
+	width: 100%;
+
+	font-size: 0px; /* to remove space at the top */
+}
+
+nav#mainMenu ul {
 	background-color: #1E90FF;
 
 	padding-left: 20px;
 	padding-right: 20px;
 }
 
-nav.mainMenu ul li.link {
+nav#mainMenu ul li.link {
 	list-style-type: none;
 
 	display: inline-block;
@@ -31,7 +41,7 @@ nav.mainMenu ul li.link {
 	border-radius: 50px;
 }
 
-nav.mainMenu ul li.link a {
+nav#mainMenu ul li.link a {
 	color: #FFF;
 	text-decoration: none;
 
@@ -40,22 +50,22 @@ nav.mainMenu ul li.link a {
 	padding: 10px;
 }
 
-nav.mainMenu ul li.link:hover a {
+nav#mainMenu ul li.link:hover a {
 	color: #1E90FF;
 }
 
-nav.mainMenu ul li.link:hover {
+nav#mainMenu ul li.link:hover {
 	background-color: #FFF;
 }
 
-nav.mainMenu ul li.active {
+nav#mainMenu ul li.active {
 	background-color: #7FFFD4;
 }
 
-nav.mainMenu ul li.active:hover {
+nav#mainMenu ul li.active:hover {
 	background-color: #7FFFD4; /* To remove animation */
 }
 
-nav.mainMenu ul li.active a {
+nav#mainMenu ul li.active a {
 	color: #1E90FF;
 }
