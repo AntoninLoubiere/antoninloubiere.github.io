@@ -1,4 +1,4 @@
-function setMarginContainer() {
+function mainMenuAutoMarge() {
 	// this function set margin in #container to don't be hide.
 
 	var mainMenu = document.getElementById('mainMenu');
@@ -7,6 +7,7 @@ function setMarginContainer() {
 	container.style.marginTop = mainMenu.clientHeight + "px";
 }
 
-function initNav() {
-	setMarginContainer();
+function init() {
+	document.getElementById('body').onresize = mainMenuAutoMarge;
+	mainMenuAutoMarge();
 }
