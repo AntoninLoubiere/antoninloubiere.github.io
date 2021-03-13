@@ -1,38 +1,41 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
 body {
-	background-repeat: no-repeat;
-	background-size: cover;
-
-	width: 99%;
-	height: 100%;
+    background-color: #004d40;
 }
 
-div.welcomeText {
-	text-align: center;
+#link {
+    border-radius: 2em 0;
+    padding: 1em 2em;
+    text-decoration: none;
+    border: solid #004d40 5px;
 
-	color: #DAA520;
-
-	margin-top: 15%;
+    transition: all .3s;
 }
 
-div.welcomeText p {
-	font-size: 18px;
+#link:hover, #link:focus {
+    border-color: #ffffffaa;
+
+    box-shadow: 0 14px 28px 0 rgba(12,12,12,.3),0 6px 12px 0 rgba(12,12,12,.3);
+
+    transform: translateY(-16px);
 }
 
-div.chooseLang * {
-	border-radius: 25px;
-
-	width: 100px;
-	height: 75px;
-
-	border-width: 2px;
-	border-style: solid;
-	border-color: transparent;
+#logo {
 }
 
-div.chooseLang img:hover {
-	border-color: white;
+#title {
+    font: xxx-large sans-serif;
+    color: #fff;
+    margin-bottom: 0;
 }
 
-div.chooseLang img.disable:hover {
-	border-color: transparent;
+#container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
