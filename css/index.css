@@ -1,9 +1,41 @@
-body {
-
+html, body {
+    height: 100%;
+    margin: 0;
 }
 
-div.welcomeText {
-	text-align: center;
+body {
+    background-color: #004d40;
+}
 
-	margin-top: 15%;
+#link {
+    border-radius: 2em 0;
+    padding: 1em 2em;
+    text-decoration: none;
+    border: solid #004d40 5px;
+
+    transition: all .3s;
+}
+
+#link:hover, #link:focus {
+    border-color: #ffffffaa;
+
+    box-shadow: 0 14px 28px 0 rgba(12,12,12,.3),0 6px 12px 0 rgba(12,12,12,.3);
+
+    transform: translateY(-16px);
+}
+
+#logo {
+}
+
+#title {
+    font: xxx-large sans-serif;
+    color: #fff;
+    margin-bottom: 0;
+}
+
+#container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
