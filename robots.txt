@@ -3,3 +3,5 @@ Allow: /
 
 Allow: /WebDiakoluo/
 Disable: /WebDiakoluo/api/
+
+Allow: /open-source-society/
