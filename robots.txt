@@ -2,6 +2,6 @@ User-agent: *
 Allow: /
 
 Allow: /WebDiakoluo/
-Disable: /WebDiakoluo/api/
+Disallow: /WebDiakoluo/api/
 
 Allow: /open-source-society/
